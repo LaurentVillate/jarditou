@@ -1,0 +1,89 @@
+<!Doctype html>
+<Html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Jarditou</title>
+    <link rel="stylesheet" href="assets\css\styles.css">
+    <link rel="stylesheet" media="screen and (max-width: 768px)" href="assets\css\mobile.css">
+</head>
+<!--header: logo et slogan-->
+<header>
+    <img id="logo" src="src\img\jarditou_logo.jpg" alt="logo jarditou" title="logo jarditou">
+    <p id="slogan">Tout le jardin</p>
+</header>
+<!--menu: liste non ordonnée 3 liens-->
+<nav>
+    <ul>
+        <li><a class="lignenav" href="index.html">Accueil</a></li>
+        <li><a class="lignenav" href="tableau.html">Tableau</a></li>
+        <li><a class="lignenav" href="contact.html">Contact</a></li>
+    </ul>
+    </div>
+</nav>
+<body>
+    <!--header 1 image bannière-->
+    <header>
+        <img src="src\img\promotion.jpg" alt="promotion" title="promotion">
+    </header>
+    <div class="conteneur">
+        <div class="colonnegauche">
+    <p>* Ces zones sont obligatoires
+        <form action="destination.php" method="post">
+            <!--Largeur fieldset adapté pour se caler sur la bannière-->
+            <fieldset>
+                <legend>Vos coordonnées</legend>
+                Votre nom* : <input type="text" name="nom"><br>
+                Votre prénom* : <input type="text" name="prenom"><br><br>
+                Sexe* :
+                <input type="radio" name="sexe" value="Féminin"> Féminin
+                <input type="radio" name="sexe" value="Masculin"> Masculin
+                <br><Br>
+                <label for="date">Date de naissance*:</label><input type="date" name="ddn" id="date"><br>
+                Code postal* : <input type="text" name="code"><br>
+                Adresse* : <input type="text" name="adresse"><br>
+                Ville* : <input type="text" name="ville"><br> 
+                <label for=email>Email* :</label><input type="text" name="email" value="dave.loper@afapa.fr" id="email"><br>
+            </fieldset>  
+            <br>
+           <fieldset>
+            <legend>Votre demande</legend> 
+            <label for="demande">Sujet* :</label>
+            <select id="demande" size="1">
+                <option value="selection" selected>Veuillez sélectionner un sujet</option>
+                <option value="commandes">Mes commandes</option>
+                <option value="questions">Question sur un projet</option>
+                <option value="reclamation">Réclamation</option>
+                <option value="autre">Autres</option>
+            </select>
+            <br>
+            Votre question* : <textarea name="question" rows="1" cols="18"></textarea>
+            </fieldset style="width:1080px;">
+            <br>
+            <input type="checkbox" name="accepter" value="accepter">* J'accepte le traitement informatique de ce formulaire
+            <br><br>
+            <button type="submit">Envoyer</button>
+            <button type="submit">Annuler</button>
+        </form>
+        <br><br><br>
+    </div>
+    <!--Colonne droite-->
+    <div class="colonnedroite">
+        <p>
+        </p>
+    </div>
+</div>
+        <hr>
+    </body>
+<footer>
+    <nav> 
+    <ul>
+        <!--Pages mentions légales, horaires et plan du site à créer-->
+    <li><a class="lignenav" href="legal.html">Mentions légales</a></li>
+    <li><a class="lignenav" href="horaires.html">Horaires</a></li>
+    <li><a class="lignenav" href="plansite.html">Plan du site</a></li>
+</ul>
+</nav>
+</footer>
+</html>
+
