@@ -43,56 +43,56 @@
         </nav>
 <!--image promotion en bannière-->
         <img class="img-fluid" src="src\img\promotion.jpg" alt="promotion" title="promotion">
-            <br>
+            <br><br>
         <p>* Ces zones sont obligatoires</p>
 <!--formulaire -->
         <form action="destination.php" method="post">
 <!--formulaire première partie: coordonnées-->
             <fieldset>
-                <legend><h3>Vos coordonnées</h3></legend>
-            <div class="form-group">
-                <label for="nom">Votre nom*</label>
-                <input type="text" class="form-control" name="nom" id="nom" placeholder="Veuillez saisir votre nom">     
-            </div>
-            <div class="form-group">
-                <label for="prenom">Votre prénom*</label>
-                <input type="text" class="form-control" name ="prenom" id="prenom" placeholder="Veuillez saisir votre prénom">     
-            </div>
-            <div class="form-group">
+            <legend><h3>Vos coordonnées</h3></legend>
+                <div class="form-group">
+                    <label for="nom">Votre nom*</label>
+                    <input type="text" class="form-control" name="nom" id="nom" placeholder="Veuillez saisir votre nom">     
+                </div>
+                <div class="form-group">
+                    <label for="prenom">Votre prénom*</label>
+                    <input type="text" class="form-control" name ="prenom" id="prenom" placeholder="Veuillez saisir votre prénom">     
+                </div>
+                <div class="form-group">
                 <legend class="col-form-label">Sexe*</legend>
-            <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="feminin" id="optionsexe" value="option1" checked>
-                <label class="form-check-label" for="inlineRadio1">Féminin</label>
-              </div>
-              <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="masculin" id="optionsexe2" value="option2">
-                <label class="form-check-label" for="inlineRadio1">Masculin</label>
-              </div>
-            </div>
-              <div class="form-group">
-                  <label for="datenaissance">Date de naissance</label>
-                  <input type="text" class="form-control datepicker" name="date" id="datenaissance" placeholder="jj/mm/aaaa">
-              </div>
-              <div class="form-group">
-                <label for="postal">Code postal*</label>
-                <input type="text" class="form-control" name="postal" id="postal">     
-            </div> 
-            <div class="form-group">
-                <label for="adresse">Adresse*</label>
-                <input type="text" class="form-control" name ="adresse" id="adresse">     
-            </div> 
-            <div class="form-group">
-                <label for="ville">ville*</label>
-                <input type="text" class="form-control" name="ville" id="ville">     
-            </div> 
-            <div class="form-group">
-                <label for="mail">Email*</label>
-                <input type="text" class="form-control" name="mail" id="mail" placeholder="daveloper@afpa.fr">     
-            </div> 
-            </fieldset>>
+                    <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="feminin" id="optionsexe" value="option1" checked>
+                    <label class="form-check-label" for="inlineRadio1">Féminin</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="masculin" id="optionsexe2" value="option2">
+                    <label class="form-check-label" for="inlineRadio1">Masculin</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="datenaissance">Date de naissance</label>
+                    <input type="text" class="form-control" name="date" id="datenaissance" placeholder="jj/mm/aaaa">
+                </div>
+                <div class="form-group">
+                    <label for="postal">Code postal*</label>
+                    <input type="text" class="form-control" name="postal" id="postal">     
+                </div> 
+                <div class="form-group">
+                    <label for="adresse">Adresse*</label>
+                    <input type="text" class="form-control" name ="adresse" id="adresse">     
+                </div> 
+                <div class="form-group">
+                    <label for="ville">ville*</label>
+                    <input type="text" class="form-control" name="ville" id="ville">     
+                </div> 
+                <div class="form-group">
+                    <label for="mail">Email*</label>
+                    <input type="text" class="form-control" name="mail" id="mail" placeholder="dave.loper@afpa.fr">     
+                </div> 
+            </fieldset>
 <!--formulaire 2e partie: demande-->
             <fieldset>
-                <legend><h3>Votre demande</h3></legend>
+            <legend><h3>Votre demande</h3></legend>
                 <div class="form-group">
                     <label for="optionsujet">Sujet</label>
                     <select class="form-control" id="optionsujet">
@@ -102,48 +102,25 @@
                         <option>Réclamation</option>
                         <option>Autres</option>
                     </select>
-                  </div>
-                  <div class="form-group">
+                    </div>
+                <div class="form-group">
                     <label for="exampleFormControlTextarea1">Votre question*:</label>
                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                  </div>
+                </div>
+                <div class="form-group">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label" for="gridCheck">
+                        J'accepte le traitement informatique de ce formulaire
+                        </label>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-dark">Envoyer</button>
+                <button type="cancel" class="btn btn-dark">Annuler</button>
             </fieldset>             
-                </form>
-<!--fin du formulaire-->
-        <div class="form-group">
-            <h2>Vos coordonnées</h2>
-            Votre nom* : <input type="text" name="nom"><br>
-            Votre prénom* : <input type="text" name="prenom"><br><br>
-            Sexe* :
-            <input type="radio" name="sexe" value="Féminin"> Féminin
-            <input type="radio" name="sexe" value="Masculin"> Masculin
-            <br><Br>
-            <label for="date">Date de naissance*:</label><input type="date" name="ddn" id="date"><br>
-            Code postal* : <input type="text" name="code"><br>
-            Adresse* : <input type="text" name="adresse"><br>
-            Ville* : <input type="text" name="ville"><br> 
-            <label for=email>Email* :</label><input type="text" name="email" value="dave.loper@afapa.fr" id="email"><br> 
-            <br>
-            <h2>Votre demande</h2> 
-            <label for="demande">Sujet* :</label>
-            <select id="demande" size="1">
-                <option>Veuillez sélectionner un sujet</option>
-                <option>Mes commandes</option>
-                <option>Question sur un projet</option>
-                <option>Réclamation</option>
-                <option>Autres</option>
-            </select>
-            <br>
-            Votre question* : <textarea name="question" rows="1" cols="18"></textarea>
-            <br>
-            <input type="checkbox" name="accepter" value="accepter">* J'accepte le traitement informatique de ce formulaire
-            <br><br>
-            <button type="submit">Envoyer</button>
-            <button type="submit">Annuler</button>
-        </div>
         </form>
-        <br><br><br>
-        <hr>
+<!--fin du formulaire-->
+        <br>
         <!--pied de page pour second menu, liste ordonnée 3 liens-->
         <footer>
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
