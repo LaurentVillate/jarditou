@@ -46,17 +46,18 @@
             <br><br>
         <p>* Ces zones sont obligatoires</p>
 <!--formulaire -->
-        <form action="destination.php" method="post">
+        <form action="destination.php" method="post" id="formulaire">
 <!--formulaire première partie: coordonnées-->
             <fieldset>
             <legend><h3>Vos coordonnées</h3></legend>
                 <div class="form-group">
                     <label for="nom">Votre nom*</label>
-                    <input type="text" class="form-control" name="nom" id="nom" placeholder="Veuillez saisir votre nom">     
+                    <input type="text" class="form-control" name="nom" id="nom" placeholder="Veuillez saisir votre nom">
+                    <br>   
                 </div>
                 <div class="form-group">
                     <label for="prenom">Votre prénom*</label>
-                    <input type="text" class="form-control" name ="prenom" id="prenom" placeholder="Veuillez saisir votre prénom">     
+                    <input type="text" class="form-control" name ="nom" id="prenom" placeholder="Veuillez saisir votre prénom">     
                 </div>
                 <div class="form-group">
                 <legend class="col-form-label">Sexe*</legend>
@@ -94,7 +95,7 @@
             <fieldset>
             <legend><h3>Votre demande</h3></legend>
                 <div class="form-group">
-                    <label for="optionsujet">Sujet</label>
+                    <label for="optionsujet">Sujet*</label>
                     <select class="form-control" id="optionsujet">
                         <option>Veuillez sélectionner un sujet</option>
                         <option>Mes commandes</option>
@@ -104,8 +105,8 @@
                     </select>
                     </div>
                 <div class="form-group">
-                    <label for="exampleFormControlTextarea1">Votre question*:</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    <label for="textArea1">Votre question*:</label>
+                    <textarea class="form-control" id="textArea1" rows="3"></textarea>
                 </div>
                 <div class="form-group">
                     <div class="form-check">
@@ -141,6 +142,7 @@
 </body><script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="JS\contact.js"></script>
 </body>
 </html>
 
